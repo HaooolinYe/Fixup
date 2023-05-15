@@ -49,7 +49,7 @@ class FixupBasicBlock(nn.Module):
 
 class FixupResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=10):
+    def __init__(self, block, layers, num_classes=100):
         super(FixupResNet, self).__init__()
         self.num_layers = sum(layers)
         self.inplanes = 16
